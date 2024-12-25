@@ -1,0 +1,63 @@
+.start-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ekranı tamamen kaplar */
+    width: 100vw; /* Genişliği tamamen doldurur */
+    background-image: url('../assets/arkaplan.png'); /* Arkaplan görseli */
+    background-size: cover; /* Görseli tamamen doldurur */
+    background-position: center; /* Görseli ortalar */
+    background-repeat: no-repeat; /* Görselin tekrarlamasını önler */
+    color: #fff;
+    text-align: center;
+    overflow: hidden; /* Taşma sorunlarını önler */
+  }
+  
+  .content {
+    background-color: rgba(0, 0, 0, 0.6); /* Şeffaf bir kutu arkaplanı */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px; /* İçeriğin genişliğini sınırlandırır */
+    width: 90%; /* Daha küçük ekranlar için uyarlanır */
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 3rem; /* Büyük başlık yazı tipi */
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  h1 span {
+    color: orange; /* Sportify için vurgu rengi */
+  }
+  
+  .start-button {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 15px 40px; /* Düğmenin boyutlarını artırır */
+    border-radius: 5px;
+    font-size: 1.5rem; /* Daha büyük düğme yazısı */
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .start-button:hover {
+    background-color: #e69500; /* Hover efekti */
+  }
+  
+  /* Mobil cihazlar için uyumluluk */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2rem; /* Başlık daha küçük ekranlar için küçülür */
+    }
+  
+    .start-button {
+      padding: 10px 20px; /* Daha küçük düğme */
+      font-size: 1.2rem;
+    }
+  }
+  
